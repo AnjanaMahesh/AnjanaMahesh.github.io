@@ -1,0 +1,15 @@
+{
+  "name": "anjana",
+  "version": "1.0.0",
+  "description": "TITLE:  Air - 100% Fully Responsive Free HTML5 Bootstrap Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 -p 8081"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
