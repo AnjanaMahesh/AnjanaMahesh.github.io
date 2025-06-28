@@ -11,9 +11,9 @@
 *
 * ======================================================= */
 body {
-  font-family: "Inconsolata", Arial, sans-serif;
+  font-family: "Merriweather", serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
   color: #333333;
   background: #fff;
@@ -64,7 +64,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Inconsolata", Arial, sans-serif;
+  font-family: "Merriweather", serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -96,7 +96,6 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Inconsolata", Arial, sans-serif;
 }
 .fh5co-nav #fh5co-logo a span {
   color: #DD356E;
@@ -1285,7 +1284,7 @@ input[type="text"] {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Inconsolata", Arial, sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
