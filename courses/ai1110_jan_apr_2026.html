@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI1110 | Probability and Random Variables (Jan–Apr 2026)</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #222;
+        }
+        h1, h2, h3 {
+            color: #000000;
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+        }
+        h1 {
+            border-bottom: 3px solid #000000;
+            padding-bottom: 8px;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .meta {
+            font-size: 0.95em;
+            color: #444;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>AI1110: Probability and Random Variables</h1>
+<p class="meta"><strong>Semester:</strong> January – April 2026</p>
+
+<section>
+    <h2>1. Assessment</h2>
+    <ul>
+        <li>Quizzes (best 3 out of 4): 30 marks</li>
+        <li>Theory Assignment: 10 marks</li>
+        <li>Programming Assignment: 10 marks</li>
+        <li>Mid-Semester Examination: 20 marks</li>
+        <li>End-Semester Examination: 30 marks</li>
+        <li>Scribing (Additional): 5 marks</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. Instructor</h2>
+    <ul>
+        <li><strong>Name:</strong> Dr. Anjana A M</li>
+        <li><strong>Email:</strong> anjana.am@ee.iith.ac.in</li>
+        <li><strong>Office:</strong> EE-516, EECS Building</li>
+        <li><strong>Office Hours:</strong> Monday & Friday, 2:00–3:00 PM (with prior appointment)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Course TAs</h2>
+    <p>(To be added later)</p>
+</section>
+
+<section>
+    <h2>4. Class Timings</h2>
+    <ul>
+        <li><strong>Slot:</strong> D</li>
+        <li><strong>Timings:</strong>
+            <ul>
+                <li>Monday: 12:00 – 12:55</li>
+                <li>Tuesday: 09:00 – 09:55</li>
+                <li>Friday: 11:00 – 11:55</li>
+            </ul>
+        </li>
+        <li><strong>Venue:</strong> LHC-LH14</li>
+        <li><strong>Online Platform:</strong> Google Classroom</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. Tutorial Timings</h2>
+    <p>(To be added later)</p>
+</section>
+
+<section>
+    <h2>6. Attendance Policy</h2>
+    <p>(To be added later)</p>
+</section>
+
+<section>
+    <h2>7. Primary References</h2>
+    <ul>
+        <li>Introduction to Probability, 2nd Edition, Athena Scientific, D. P. Bertsekas, J. N. Tsitsiklis</li>
+        <li>A First Course in Probability, 10th Edition, Pearson, Sheldon. M. Ross</li>
+        <li>Intuitive Probability and Random Processes with MATLAB, 1st Edition, Springer, Steven M. Kay.</li>
+        <li>Probability with Engineering Applications, <u><a href="https://courses.grainger.illinois.edu/ece313/fa2020/probabilityAug21.pdf" target="_blank">ECE313</a></u> Course Notes, University of Illinois, Urbana-Champaign, Bruce Hajek.</li>
+        <li>Random Processes for Engineers, Bruce Hajek, Cambridge University Press, 2015. (Preproduction print available for free download <u><a href="https://hajek.ece.illinois.edu/Papers/randomprocJuly14.pdf" target="_blank">here</a></u>.)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>8. Tentative List of Topics</h2>
+    <ul>
+        <li>Course logistics and introduction to probability</li>
+        <li>Preliminaries: set theory, functions, cardinality, countability</li>
+        <li>Permutations and combinations</li>
+        <li>Axiomatic definition of probability</li>
+        <li>Motivation and paradoxes (Bertrand’s paradox)</li>
+        <li>Discrete and continuous probability laws</li>
+        <li>Conditional probability and total probability theorem</li>
+        <li>Bayes’ theorem and independence</li>
+        <li>Discrete random variables
+            <ul>
+                <li>PMF and CDF</li>
+                <li>Common distributions</li>
+                <li>Expectation and variance</li>
+                <li>Joint and marginal distributions</li>
+                <li>Functions of random variables</li>
+            </ul>
+        </li>
+        <li>Continuous random variables
+            <ul>
+                <li>PDF and CDF</li>
+                <li>Common distributions</li>
+                <li>Linear scaling and moments</li>
+                <li>Joint and marginal PDFs</li>
+                <li>Multivariate Gaussians</li>
+            </ul>
+        </li>
+        <li>Derived distributions
+            <ul>
+                <li>Convolution</li>
+                <li>Correlation and covariance</li>
+                <li>Conditional expectation and variance</li>
+            </ul>
+        </li>
+        <li>Transforms
+            <ul>
+                <li>Probability generating function (PGF)</li>
+                <li>Characteristic function</li>
+                <li>Moment generating function (MGF)</li>
+            </ul>
+        </li>
+        <li>Concentration inequalities</li>
+        <li>Convergence of random variables and limit theorems</li>
+        <li>Introduction to statistical estimation</li>
+        <li>Introduction to random processes</li>
+    </ul>
+</section>
+
+<section>
+    <h2>9. Course Notes from Jan-April 2025 Semester</h2>
+    <p>
+        Scribed course notes from jan-apr 2025 can be found <u><a href="https://drive.google.com/drive/folders/16RmlbnAL4iRZsJSUA7fDronAai-8rqhO" target="_blank">here</a></u>.
+    </p>
+</section>
+
+<section>
+    <h2>10. Academic Honesty and Plagiarism</h2>
+    <p>
+        Students are encouraged to discuss class materials and assignments with peers. However, verbatim copying from friends, books, or online sources in exams and assignments — including programming assignments — is strictly prohibited. Collaboration in understanding and solving assignments is acceptable, but all solutions and code must be written independently. Any instance of copying in assignments or exams will result in a fail grade.
+See <u><a href="https://cse.iith.ac.in/academics/plagiarism-policy.html" target="_blank">this page</a></u> (maintained by the CSE department), <u><a href="https://www.ox.ac.uk/students/academic/guidance/skills/plagiarism" target="_blank">this page</a></u>, and <u><a href="https://en.wikipedia.org/wiki/Plagiarism" target="_blank">this one</a></u> to understand more about plagiarism.
+    </p>
+</section>
+
+<footer>
+    <p>AI1110 · IIT Hyderabad · Jan–Apr 2026</p>
+</footer>
+
+</body>
+</html>
