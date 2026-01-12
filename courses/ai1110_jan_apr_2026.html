@@ -17,6 +17,22 @@
             margin: 40px;
             background-color: #f9f9f9;
             color: #222;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: -2;
         }
         h1, h2, h3 {
             color: #000000;
@@ -50,9 +66,29 @@
             font-size: 0.9em;
             color: #555;
         }
+        .floating-bubble {
+            position: fixed;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            pointer-events: none;
+            z-index: -1;
+            will-change: transform;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+            transition: all 0.28s ease;
+        }
+        a:hover {
+            color: #ff6b6b;
+            border-bottom-color: #ff6b6b;
+        }
     </style>
 </head>
 <body>
+    <!-- Floating bubbles container -->
+    <div id="bubble-container"></div>
 
 <h1>AI1110: Probability and Random Variables</h1>
 <p class="meta"><strong>Semester:</strong> January – April 2026</p>
@@ -75,13 +111,27 @@
         <li><strong>Name:</strong> Dr. Anjana A M</li>
         <li><strong>Email:</strong> anjana.am@ee.iith.ac.in</li>
         <li><strong>Office:</strong> EE-516, EECS Building</li>
-        <li><strong>Office Hours:</strong> Monday & Friday, 2:00–3:00 PM (with prior appointment)</li>
+        <li><strong>Office Hours:</strong> Monday & Tuesday, 2:00–3:00 PM (with prior appointment)</li>
     </ul>
 </section>
 
 <section>
     <h2>3. Course TAs</h2>
-    <p>(To be added later)</p>
+    <p><strong>MTech TAs:</strong></p>
+    <p><strong>BTech TAs:</strong></p>
+    <ul>
+        <li><a href="mailto:cs24btech11014@iith.ac.in">Boreddy Sri Sai Abhinav Reddy</a></li>
+        <li><a href="mailto:ai24btech11011@iith.ac.in">Gourishetty Himani</a></li>
+        <li><a href="mailto:cs24btech11030@iith.ac.in">Hari Krishna S</a></li>
+        <li><a href="mailto:ai24btech11019@iith.ac.in">Kotha Pratheek Reddy</a></li>
+        <li><a href="mailto:cs24btech11037@iith.ac.in">Kuruva Jeshwanth Krishna</a></li>
+        <li><a href="mailto:ai24btech11023@iith.ac.in">Pakala Tarun Reddy</a></li>
+        <li><a href="mailto:cs24btech11047@iith.ac.in">Pathri Vidya Praveen</a></li>
+        <li><a href="mailto:cs24btech11061@iith.ac.in">Tavva Dinesh Reddy</a></li>
+        <li><a href="mailto:cs24btech11064@iith.ac.in">Uppala Prajin</a></li>
+        <li><a href="mailto:ai24btech11035@iith.ac.in">Vallepu Preethika</a></li>
+       Note: You are encouraged to email the TAs and discuss any doubts with them. However, please ensure that all communication remains respectful and professional. Abusive or inappropriate language will not be tolerated—humility and courtesy are expected at all times.
+    </ul>
 </section>
 
 <section>
@@ -102,16 +152,13 @@
 
 <section>
     <h2>5. Tutorial Timings</h2>
-    <p>(To be added later)</p>
+    <p>Saturdays 11:00 AM to 1:00 PM</p>
 </section>
 
-<section>
-    <h2>6. Attendance Policy</h2>
-    <p>(To be added later)</p>
-</section>
+
 
 <section>
-    <h2>7. Primary References</h2>
+    <h2>6. Primary References</h2>
     <ul>
         <li>Introduction to Probability, 2nd Edition, Athena Scientific, D. P. Bertsekas, J. N. Tsitsiklis</li>
         <li>A First Course in Probability, 10th Edition, Pearson, Sheldon. M. Ross</li>
@@ -122,7 +169,7 @@
 </section>
 
 <section>
-    <h2>8. Tentative List of Topics</h2>
+    <h2>7. Tentative List of Topics</h2>
     <ul>
         <li>Course logistics and introduction to probability</li>
         <li>Preliminaries: set theory, functions, cardinality, countability, Permutations and combinations</li> 
@@ -141,14 +188,14 @@
 </section>
 
 <section>
-    <h2>9. Course Notes from Jan-April 2025 Semester</h2>
+    <h2>8. Course Notes from Jan-April 2025 Semester</h2>
     <p>
         Scribed course notes from jan-apr 2025 can be found <u><a href="https://drive.google.com/drive/folders/16RmlbnAL4iRZsJSUA7fDronAai-8rqhO" target="_blank">here</a></u>.
     </p>
 </section>
 
 <section>
-    <h2>10. Academic Honesty and Plagiarism</h2>
+    <h2>9. Academic Honesty and Plagiarism</h2>
     <p>
         Students are encouraged to discuss class materials and assignments with peers. However, verbatim copying from friends, books, or online sources in exams and assignments — including programming assignments — is strictly prohibited. Collaboration in understanding and solving assignments is acceptable, but all solutions and code must be written independently. Any instance of copying in assignments or exams will result in a fail grade.
 See <u><a href="https://cse.iith.ac.in/academics/plagiarism-policy.html" target="_blank">this page</a></u> (maintained by the CSE department), <u><a href="https://www.ox.ac.uk/students/academic/guidance/skills/plagiarism" target="_blank">this page</a></u>, and <u><a href="https://en.wikipedia.org/wiki/Plagiarism" target="_blank">this one</a></u> to understand more about plagiarism.
@@ -158,6 +205,11 @@ See <u><a href="https://cse.iith.ac.in/academics/plagiarism-policy.html" target=
 <footer>
     <p>AI1110 · IIT Hyderabad · Jan–Apr 2026</p>
 </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/gsap-animations.js"></script>
 
 </body>
 </html>
