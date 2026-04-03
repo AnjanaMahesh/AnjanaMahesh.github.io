@@ -1481,5 +1481,37 @@ input[type="text"] {
 .js .animate-box {
   opacity: 0;
 }
+<style>
+.news-container {
+  width: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.news-scroll {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+}
+
+.news-container:hover .news-scroll {
+  animation-play-state: paused;
+}
+
+.news-scroll span {
+  margin-right: 50px;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+</style>
 
 /*# sourceMappingURL=style.css.map */
