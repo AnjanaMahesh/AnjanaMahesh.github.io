@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EE5350 | Error Correcting Codes (July–Nov 2026)</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #222;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: -2;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #000000;
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+        }
+
+        h1 {
+            border-bottom: 3px solid #000000;
+            padding-bottom: 8px;
+        }
+
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .meta {
+            font-size: 0.95em;
+            color: #444;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .floating-bubble {
+            position: fixed;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            pointer-events: none;
+            z-index: -1;
+            will-change: transform;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+            transition: all 0.28s ease;
+        }
+
+        a:hover {
+            color: #ff6b6b;
+            border-bottom-color: #ff6b6b;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Floating bubbles container -->
+    <div id="bubble-container"></div>
+
+    <h1>EE5350: Error Correcting Codes</h1>
+    <p class="meta"><strong>Semester:</strong> July – Nov 2026</p>
+
+    <section>
+        <h2>1. Assessment</h2>
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Instructor</h2>
+        <ul>
+            <li><strong>Name:</strong> Dr. Anjana A M</li>
+            <li><strong>Email:</strong> anjana.am@ee.iith.ac.in</li>
+            <li><strong>Office:</strong> EE-516, EECS Building</li>
+            <li><strong>Office Hours:</strong> Monday & Tuesday, 2:00–3:00 PM (with prior appointment)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Course TAs</h2>
+
+    </section>
+
+    <section>
+        <h2>4. Class Timings</h2>
+        <ul>
+            <li><strong>Slot:</strong> F</li>
+            <li><strong>Timings:</strong>
+                <ul>
+
+                    <li>Tuesday: 11:00 – 09:55</li>
+                    <li>Wednesday: 2:30 – 3:30</li>
+                    <li>Friday: 10:00 – 10:55</li>
+                </ul>
+            </li>
+            <li><strong>Venue:</strong> A-221</li>
+            <li><strong>Online Platform:</strong> Google Classroom</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Tutorial Timings</h2>
+    </section>
+
+
+
+    <section>
+        <h2>6. References</h2>
+        <ul>
+            <li>Ron. M. Roth, Introduction to Coding Theory, Cambridge University Press, 2006. (An excellent textbook primarily covering block codes)</li>
+            <li>S. Lin and D.J. Costello, Error Control Coding (2nd edition), Prentice-Hall, 2004. (A good introduction from the engineering perspective.)</li>
+            <li>T. Richardson and R. Urbanke, Modern Coding Theory, Cambridge University Press, 2008. (Focuses on LDPC and related codes) </li>
+            <li>R. Johanneson and K.Sh. Zigangirov, Fundamentals of Convolutional Coding, IEEE Press, 1999. </li>
+            <li>F. J. MacWilliams and N.J.A. Sloane, The Theory of Error-Correcting Codes, Elsevier/North-Holland, 1977.</li>
+            <li>R. E. Blahut, Algebraic Codes for Data Transmission, Cambridge University Press, 2002.</li>
+            <li>R. J. McEliece, Theory of Information and Coding (2nd edition), Cambridge University Press, 2002. </li>
+            <li><u><a href="https://www.youtube.com/playlist?list=PL85783E9E7B5F2C0D" target="_blank"> Video Lectures by Prof. P. Vijay Kumar, IISc Bengaluru</a></u></li>
+            <li><u><a href="https://www.youtube.com/playlist?list=PL5002EB7306694E7D" target="_blank"> Video Lectures by Prof. Andrew Thangaraj, IIT Madras</a></u></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Tentative List of Topics</h2>
+        <ul>
+            
+            <li>Motivation for Error Control Codes: A brief introduction to Information Theory - Channel Coding Theorem</li>
+            <li> Basics of binary codes: block length, Hamming weight, minimum distance, rate </li>
+            <li>Mathematical Preliminaries: Groups, Rings, Fields, Vector Spaces </li>
+            <li>Linear block codes: generator and parity check matrices, dual code </li>
+            <li>Bounds on code sizes: Hamming, Gilbert-Varshamov, Singleton bounds </li>
+            <li>Decoding Linear Block Codes: Standard Array, ML, MAP Decoder</li>
+            <li>MDS codes: Reed Solomon (RS) Codes, Dual of RS codes,Systematic Encoding of RS codes </li>
+            <ul>
+                <li>Berlekamp-Welch decoding, Shamir's Secret Sharing</li>
+            </ul>
+            <li>Applications to Learning: Straggler Mitigation in Distributed Computing </li>
+            <li>Applications in Post-Quantum Cryptography: McElice Cryptosystem</li>
+            <li>Reed Muller Codes, Polar codes</li>
+            <li>Semi-Rings and Generalized Distributive Law</li>
+            <li>LDPC Codes: Belief Propagation/ Message Passing decoder </li>
+            <li>Convolutional Codes and Viterbi Decoding</li>
+            <li>Finite Fields, Cyclic Codes (BCH codes)</li>
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>9. Academic Honesty and Plagiarism</h2>
+        <p>
+            Students are encouraged to discuss class materials and assignments with peers. However, verbatim copying
+            from friends, books, or online sources in exams and assignments — including programming assignments — is
+            strictly prohibited. Collaboration in understanding and solving assignments is acceptable, but all solutions
+            and code must be written independently. Any instance of copying in assignments or exams will result in a
+            fail grade.
+            See <u><a href="https://cse.iith.ac.in/academics/plagiarism-policy.html" target="_blank">this page</a></u>
+            (maintained by the CSE department), <u><a
+                    href="https://www.ox.ac.uk/students/academic/guidance/skills/plagiarism" target="_blank">this
+                    page</a></u>, and <u><a href="https://en.wikipedia.org/wiki/Plagiarism" target="_blank">this
+                    one</a></u> to understand more about plagiarism.
+        </p>
+    </section>
+
+    <footer>
+        <p>EE5350 · IIT Hyderabad · July–Nov 2026</p>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="../js/gsap-animations.js"></script>
+
+</body>
+
+</html>

@@ -1481,7 +1481,7 @@ input[type="text"] {
 .js .animate-box {
   opacity: 0;
 }
-<style>
+
 .news-container {
   width: 100%;
   overflow: hidden;
@@ -1512,6 +1512,3 @@ input[type="text"] {
     transform: translateX(-100%);
   }
 }
-</style>
-
-/*# sourceMappingURL=style.css.map */
