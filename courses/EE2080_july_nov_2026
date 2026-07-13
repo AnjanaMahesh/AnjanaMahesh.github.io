@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EE2080 |Random Processes (July–Nov 2026)</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #222;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: -2;
+        }
+        h1, h2, h3 {
+            color: #000000;
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+        }
+        h1 {
+            border-bottom: 3px solid #000000;
+            padding-bottom: 8px;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .meta {
+            font-size: 0.95em;
+            color: #444;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .floating-bubble {
+            position: fixed;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            pointer-events: none;
+            z-index: -1;
+            will-change: transform;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+            transition: all 0.28s ease;
+        }
+        a:hover {
+            color: #ff6b6b;
+            border-bottom-color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating bubbles container -->
+    <div id="bubble-container"></div>
+
+<h1>EE2080: Random Processes</h1>
+<p class="meta"><strong>Semester:</strong> July – November 2026</p>
+
+<section>
+    <h2>1. Assessment</h2>
+    <ul>
+        <li>Programming Assignment: 20 marks</li>
+        <li>Mid-Segment Examination: 30 marks</li>
+        <li>End-Segment Examination: 50 marks</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. Instructor</h2>
+    <ul>
+        <li><strong>Name:</strong> Dr. Anjana A M</li>
+        <li><strong>Email:</strong> anjana.am@ee.iith.ac.in</li>
+        <li><strong>Office:</strong> EE-516, EECS Building</li>
+        <li><strong>Office Hours:</strong> Tuesday & Friday, 2:00–3:00 PM (with prior appointment)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Course TAs</h2>
+    <ul>
+        <li><a href="mailto:cs24btech11014@iith.ac.in">Boreddy Sri Sai Abhinav Reddy</a></li>
+        <li><a href="mailto:cs24btech11047@iith.ac.in">Pathri Vidya Praveen</a></li>
+        <li><a href="mailto:cs24btech11020@iith.ac.in">Chiruvella Gagan Chandra Sai Ram</a></li>
+       Note: You are encouraged to email the TAs and discuss any doubts with them. However, please ensure that all communication remains respectful and professional. Abusive or inappropriate language will not be tolerated—humility and courtesy are expected at all times.
+    </ul>
+</section>
+
+<section>
+    <h2>4. Class Timings</h2>
+    <ul>
+        <li><strong>Slot:</strong> D</li>
+        <li><strong>Timings:</strong>
+            <ul>
+                <li>Monday: 12:00 – 12:55</li>
+                <li>Tuesday: 09:00 – 09:55</li>
+                <li>Friday: 11:00 – 11:55</li>
+            </ul>
+        </li>
+        <li><strong>Venue:</strong> A-221</li>
+        <li><strong>Online Platform:</strong> Google Classroom</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. Tutorial Timings</h2>
+    <p>Saturdays 11:00 AM to 1:00 PM</p>
+</section>
+
+
+
+<section>
+    <h2>6. Primary References</h2>
+    <ul>
+        <li>Discrete Event Stochastic Processes, Anurag Kumar, Department of ECE, IISc. (Preproduction print available for free download <u><a href="https://ece.iisc.ac.in/~anurag/books/anurag/spqt.pdf" target="_blank">here</a></u>.)</li>
+        <li>Random Processes for Engineers, Bruce Hajek, Cambridge University Press, 2015. (Preproduction print available for free download <u><a href="https://hajek.ece.illinois.edu/Papers/randomprocJuly14.pdf" target="_blank">here</a></u>.) </li>
+        <li>Stochastic Processes: Theory for Applications, Robert G. Gallager, Cambridge University Press, 2013.</li>
+        <li>Probability, Statistics, and Random Processes for Engineers, 4th Edition, by H. Stark and J. W. Woods.</li>
+        <li>Lecture Notes for the course “Stochastic Processes: Theory and Applications”, Dr. P. N. Karthik, Department of AI, IIT Hyderabad.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>7. Tentative List of Topics</h2>
+    <ul>
+        <li>Course logistics and Review of probability and random variables</li>
+        <li>Preliminaries: set theory, functions, cardinality, countability, Permutations and combinations</li> 
+        <li>Random processes: Introduction, Examples, Finite Dimensional Distributions,  Properties: Mean, Autocorrelation, Autocovariance, Stationarity, WSS Process, Ergodicity, Stationary and Independent Increments</li>
+        <li>IID Bernoulli process, Poisson Process, Gaussian Processes, Random Walks, filtrations, stopping time, Wald’s Lemma</li>
+        <li>Discrete time Markov chains (DTMCs), state space, examples, transition probability matrix (TPM),  time homogeneous Markov chains, Chapman--Kolmogorov equation for TH-DTMCs, Strong Markov property, hitting times to a state</li>
+        <li>Linear Systems Input/Output Relationships for WSS processes, Power Spectral Density, White Noise (Spectrally flat) processes</li>
+        <li>Representation of random signals - Karhunen-Loeve Expansion</li>
+    </ul>
+</section>
+
+<section>
+    <h2>8. Academic Honesty and Plagiarism</h2>
+    <p>
+        Students are encouraged to discuss class materials and assignments with peers. However, verbatim copying from friends, books, or online sources in exams and assignments — including programming assignments — is strictly prohibited. Collaboration in understanding and solving assignments is acceptable, but all solutions and code must be written independently. Any instance of copying in assignments or exams will result in a fail grade.
+See <u><a href="https://cse.iith.ac.in/academics/plagiarism-policy.html" target="_blank">this page</a></u> (maintained by the CSE department), <u><a href="https://www.ox.ac.uk/students/academic/guidance/skills/plagiarism" target="_blank">this page</a></u>, and <u><a href="https://en.wikipedia.org/wiki/Plagiarism" target="_blank">this one</a></u> to understand more about plagiarism.
+    </p>
+</section>
+
+<<section>
+    <h2>9. Course Policy on LLM Usage</h2>
+    <p>As you progress in your studies and career, you will almost certainly have access to and make use of large language models (LLMs), at least for tasks such as generating code. A key skill is not simply using these tools, but critically evaluating their output, identifying mistakes, and debugging incorrect solutions.
+
+For this reason, you are permitted to use LLMs while working on your homework. However, we strongly encourage you to attempt the problems on your own before consulting an LLM. Homework is intended to help you develop your understanding, not just produce correct answers.
+
+If your submission uses notation that we have not introduced, or relies on concepts that have not yet been covered in the course, it will be graded more strictly. Ultimately, you are responsible for understanding the material. Relying on an LLM to complete your assignments without engaging with the underlying concepts may help you finish the homework more quickly, but it will leave you unprepared for exams and, more importantly, prevent you from developing the problem-solving skills that the course is designed to teach. 
+    </p>
+</section>
+
+<footer>
+    <p>AI1110 · IIT Hyderabad · Jan–Apr 2026</p>
+</footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/gsap-animations.js"></script>
+
+</body>
+</html>
